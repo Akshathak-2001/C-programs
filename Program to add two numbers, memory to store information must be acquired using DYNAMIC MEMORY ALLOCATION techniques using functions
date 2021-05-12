@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<stdlib.h>
+int add(int *p,int *sum)
+{   
+    int i;
+    printf("Enter the two numbers:\n");
+        for(i=0;i<2;i++)
+  {
+     scanf("%d",p+i);
+     *sum += *(p+i);
+  }
+  return *sum;
+}
+
+int main()
+{
+    int *a,sum=0,i;
+    a=(int*)malloc(2*sizeof(int));
+    add(a,&sum);
+  printf("RESULT: %d",sum);
+}
