@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<stdlib.h>
+#define max 100
+int prime(int num)
+{
+    int i;
+    for(i=2;i<num;i++)
+        if(num%i==0)
+            return 0;
+    return 1;
+}
+
+int main()
+{
+    int num,i,j=0;
+    printf("Enter the integer\n");
+    scanf("%d",&num);
+    i=prime(num);
+    if(i==1)
+        printf("It is a prime number\n");
+    else
+        printf("It is not a prime number\n");
+    return 0;
+}
