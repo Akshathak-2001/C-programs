@@ -1,0 +1,20 @@
+#include<stdio.h>
+
+void main()
+{
+    int i,j,k,n;
+    printf("Enter number till which you want to print prime numbers\n");
+    scanf("%d",&n);
+    printf("Prime numbers are:\n");
+    for(i=2;i<=n;i++)
+    {
+        k=0;
+        for(j=1;j<=i;j++)
+        {
+            if(i%j==0)
+                k++;
+        }
+        if(k==2)
+            printf("%d\t",i);
+    }
+}
