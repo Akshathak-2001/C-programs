@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+
+int main()
+{
+    char *a;
+    a=(char *)malloc(sizeof(char));
+    printf("Enter string\n");
+    scanf("%s",a);
+    printf("String:%s",a);
+}
