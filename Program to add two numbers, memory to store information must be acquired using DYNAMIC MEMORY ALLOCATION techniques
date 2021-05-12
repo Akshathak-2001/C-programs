@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int *a,*b;
+    a=(int*)malloc(sizeof(int));
+    b=(int*)malloc(sizeof(int));
+    printf("Enter the two numbers\n");
+    scanf("%d%d",a,b);
+    printf("RESULT:%d",(*a)+(*b));
+    return 0;
+}
