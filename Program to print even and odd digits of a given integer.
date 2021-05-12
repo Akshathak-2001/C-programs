@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<stdlib.h>
+#define max 100
+int main()
+{
+    int num,i=0,j=0,a[max];
+    printf("Enter the integer\n");
+    scanf("%d",&num);
+    while(num>0)
+    {
+        a[i++]=num%10;
+        num=num/10;
+    }
+    printf("\nOdd digits are:\n");
+    for(j=i-1;j>=0;j--)
+        if(a[j]%2==1)
+            printf("%d\t",a[j]);
+    printf("\nEven digits are:\n");
+    for(j=i-1;j>=0;j--)
+        if(a[j]%2==0)
+            printf("%d\t",a[j]);
+}
