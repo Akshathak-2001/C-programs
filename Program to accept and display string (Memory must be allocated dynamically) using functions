@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+
+char printstring(char *a)
+{
+    printf("Enter string\n");
+    scanf("%s",a);
+    printf("String:%s",a);
+}
+
+int main()
+{
+    char *a;
+    a=(char *)malloc(sizeof(char));
+    printstring(a);
+}
