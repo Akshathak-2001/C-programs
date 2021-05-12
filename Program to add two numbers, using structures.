@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<stdlib.h>
+struct add
+{
+   int a,b,c; 
+};
+typedef struct add ADD;
+
+void sum(ADD res)
+{
+    res.c=res.a+res.b;
+    printf("RESULT:%d",res.c);
+}
+
+int main()
+{
+    ADD res;
+    printf("Enter the two number:\n");
+    scanf("%d%d",&(res.a),&(res.b));
+    sum(res);
+    return 0;
+}
