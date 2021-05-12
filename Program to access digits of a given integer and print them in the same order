@@ -1,0 +1,25 @@
+#include<stdio.h>
+#define max 100
+
+void display(int num)
+{
+    int a[max],i=0,j,k;
+    printf("Nmbers are:\n");
+    while(num!=0)
+    {
+        k=num%10;
+        a[i]=k;
+        i++;
+        num=num/10;
+    }
+    for(j=i-1;j>-1;j--)
+        printf("%d\n",a[j]);
+}
+int main()
+{
+    int num;
+    printf("Enter the integer\n");
+    scanf("%d",&num);
+    display(num);
+    return 0;
+}
