@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+    char str1[100],str2[10][10]; 
+    int i,j=0,ctr=0,l;
+    printf(" enter  a string : ");
+    gets(str1);
+    for(i=0;str1[i]!='\0';i++)
+    {
+        l++;
+        {
+            if(str1[i]==' '||str1[i]=='\0')
+            {
+                str2[ctr][j]='\0';
+                ctr++;  
+                j=0; 
+            }
+            else
+            {
+                str2[ctr][j]=str1[i];
+                j++;
+            }
+        }
+    }
+        
+    printf("\n String after split  :\n");
+    for(i=0;i<=ctr;i++)
+        printf(" %s\n",str2[i]);
+    return 0;
+}
